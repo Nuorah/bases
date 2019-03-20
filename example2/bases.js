@@ -1,2 +1,4 @@
-var maVariable = 10;
-console.log("Ma variable : " ,maVariable);
+var maVariable = {
+	nom: "Module Javascript"
+} ;
+console.log("Ma variable : " , maVariable);
