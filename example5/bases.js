@@ -15,4 +15,19 @@ function throwError(message){
 	console.log("Auto-invoquée");
 })();
 
+var hello = function (name) {
+	console.log('Hello ' + name);
+};
+
+setTimeout(function () {
+// la fonction sera exécutée dans 5000 millisecondes
+}, 5000)
+
+function asyncSayHello (name, callback) {
+	if (callback && typeof callback === 'function') {
+		setTimeout(callback, 5000, name);
+	}
+}
+
+asyncSayHello('Niko', hello);
 
