@@ -1,15 +1,16 @@
-function Formation () {
-	this.nom = 'Module JavaScript';
-	this.langage = 'javaScript';
-	this.dateDebut = "01/09/2017";
-	this.dateFin = "05/09/2017";
-	this.stagiaires = [{
-		nom: 'Nom Exemple',
-		prenom: 'Prenom Exemple'
-	}]
+function Formation (nom, langage, dateDebut, dateFin, stagiaires) {
+	this.nom = nom ;
+	this.langage = langage;
+	this.dateDebut = dateDebut;
+	this.dateFin = dateFin;
+	this.stagiaires = stagiaires;
 }
 
-var formation = new Formation();
+var formation = new Formation('Module JavaScript', 'javaScript', "01/09/2017", "05/09/2017",
+	[{
+		nom: 'Nom Exemple',
+		prenom: 'Prenom Exemple'
+	}]);
 
 console.log(formation.nom);
 console.log(formation.langage);
