@@ -4,11 +4,15 @@ function multiply(a, b){
 	}
 	return a*b;
 }
-var x = multiply(10,  'formation', 4);
+var x = multiply(10, 4);
 console.log(x);
 
 function throwError(message){
 	throw new Error(message)
 }
+
+(function(){
+	console.log("Auto-invoquée");
+})();
 
 
