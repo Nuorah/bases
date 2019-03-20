@@ -20,3 +20,13 @@ formationJS.formateur = {
 }
 
 console.log(formationJS.formateur.nom);
+
+formationJS.description = function(){
+	console.log(this.nom + " " + this.dateDebut + " " + this.dateFin)
+}
+
+formationJS.description();
+
+delete formationJS.stagiaires;
+
+console.log(formationJS);
